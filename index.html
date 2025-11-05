@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Juan Cañada</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' ry='12' fill='%230b5ed7'/%3E%3Ctext x='50%25' y='52%25' text-anchor='middle' font-size='34' font-family='Segoe UI, Roboto, Arial, sans-serif' fill='white' dy='.1em'%3EJC%3C/text%3E%3C/svg%3E" type="image/svg+xml" />
 </head>
@@ -24,11 +24,16 @@
 
   <section id="about" class="section">
     <div class="container">
-      <img src="img/yo.jpg" alt="Profile picture" class="profile-pic" />
-      <h2>About Me</h2>
-      <p>
-        PhD student in AI & Geospatial Data at the University of Oviedo.
-      </p>
+      <div class="about-layout">
+        <div class="about-left">
+          <img src="img/yo.jpg" alt="Profile picture" class="profile-pic" />
+        </div>
+        <div class="about-right">
+          <h2 class="about-name">Juan Cañada</h2>
+          <p class="about-tagline">PhD student in AI & Geospatial Data at the University of Oviedo.</p>
+          <p class="about-bio">I explore multimodal learning, geospatial open data integration and practical ML systems. Passionate about building tools that bridge research and real-world impact.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -39,17 +44,17 @@
       <ul class="pub-list">
         <li>
           <strong>A Multimodal Conversational Assistant for the Characterization of Agricultural Plots from Geospatial Open Data</strong><br />
-          <em>4th International Conference on Geographic Information and Remote Sensing Technology</em>, 2025 — <a href="#">https://doi.org/10.48550/arxiv.2509.17544</a>
+          <em>4th International Conference on Geographic Information and Remote Sensing Technology</em>, 2025 — <a href="https://doi.org/10.48550/arxiv.2509.17544">DOI</a>
         </li>
 
         <li>
           <strong>Innovative Solutions for Respiratory Rate Assessment: Computer Vision-based Estimators for Young Children</strong><br />
-          <em>Preprint</em>, 2023 — <a href="#">https://doi.org/10.36227/techrxiv.23676408.v1</a>
+          <em>Preprint</em>, 2023 — <a href="https://doi.org/10.36227/techrxiv.23676408.v1">DOI</a>
         </li>
 
         <li>
           <strong>Assistance to lung cancer detection on histological images using Convolutional Neural Networks</strong><br />
-          <em>2022 E-Health and Bioengineering Conference (EHB)</em>, 2022 — <a href="#">https://doi.org/10.1109/ehb55594.2022.9991400</a>
+          <em>2022 E-Health and Bioengineering Conference (EHB)</em>, 2022 — <a href="https://doi.org/10.1109/ehb55594.2022.9991400">DOI</a>
         </li>
       </ul>
     </div>
@@ -60,17 +65,32 @@
     <div class="container">
       <h2>Personal Projects</h2>
       <div class="projects-grid">
+        <div class="project-card">
+          <img class="project-image" alt="Project cover" src="img/agrobot.png" />
+          <h3>Agrobot</h3>
+          <p>A conversational assistant that leverages geospatial open data through natural language.</p>
+          <a href="https://doi.org/10.48550/arxiv.2509.17544" target="_blank">View Project</a>
+        </div>
 
         <div class="project-card">
+          <img class="project-image" alt="Project cover" src="img/material-alch3mist.png" />
           <h3>material-alch3mist</h3>
           <p>An end-to-end text-to-mesh FLUX.1 Kontext [Dev]-based diffusion model specialized on texture generation.</p>
           <a href="https://github.com/juancc-00/material-alch3mist" target="_blank">View Project</a>
         </div>
 
         <div class="project-card">
+          <img class="project-image" alt="Project cover" src="img/mus.png" />
           <h3>Mus bot</h3>
           <p>A game of the Spanish card game Mus against the machine</p>
           <a href="https://yosoymus.onrender.com/" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img class="project-image" alt="Project cover" src="img/vocabulary.png"/>
+          <h3>vocabulary cardgame</h3>
+          <p>An end-to-end text-to-mesh FLUX.1 Kontext [Dev]-based diffusion model specialized on texture generation.</p>
+          <a href="https://github.com/juancc-00/material-alch3mist" target="_blank">View Project</a>
         </div>
 
       </div>
@@ -84,6 +104,9 @@
       <p>
         You can reach me at: <a href="mailto:juan.canada.carril@gmail.com">juan.canada.carril@gmail.com</a>
       </p>
+      <div>
+        <a class="btn btn-primary" href="cv/CV_JC.pdf" download>Download CV</a>
+      </div>
       <div class="socials">
         <a href="https://github.com/juancc-00" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/juan-cc" target="_blank">LinkedIn</a>
