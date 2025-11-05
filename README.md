@@ -1,3 +1,3 @@
 # Portfolio
 
-first commit
+My personal portfolio

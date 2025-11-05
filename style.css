@@ -175,7 +175,7 @@ h2 {
 
 .project-actions {
   position: absolute;
-  left: 1rem;
+  left: 0rem;
   bottom: 1rem;
 }
 
@@ -253,7 +253,7 @@ footer {
     background: #222;
     padding: 0.75rem;
     border-radius: 10px;
-    gap: 0.75rem;
+    gap: 1rem;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   }
 
