@@ -11,12 +11,15 @@
   <header>
     <div class="container">
       <h1 class="name">Juan Cañada</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">☰</label>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          
         </ul>
       </nav>
     </div>
@@ -29,13 +32,16 @@
           <img src="img/yo.jpg" alt="Profile picture" class="profile-pic" />
         </div>
         <div class="about-right">
-          <h2 class="about-name">Juan Cañada</h2>
-          <p class="about-tagline">PhD student in AI & Geospatial Data at the University of Oviedo.</p>
-          <p class="about-bio">I explore multimodal learning, geospatial open data integration and practical ML systems. Passionate about building tools that bridge research and real-world impact.</p>
+          <h2 class="about-name">PhD student in AI & Geospatial Data</h2>
+          <p class="about-tagline"></p>
         </div>
       </div>
     </div>
   </section>
+
+  <div>
+    <a class="btn btn-primary" href="cv/CV_JC.pdf" download>Download CV</a>
+  </div>
 
   <!-- Publications Section -->
   <section id="publications" class="section">
@@ -69,28 +75,36 @@
           <img class="project-image" alt="Project cover" src="img/agrobot.png" />
           <h3>Agrobot</h3>
           <p>A conversational assistant that leverages geospatial open data through natural language.</p>
-          <a href="https://doi.org/10.48550/arxiv.2509.17544" target="_blank">View Project</a>
+          <div class="project-actions">
+            <a class="btn btn-outline" href="https://doi.org/10.48550/arxiv.2509.17544" target="_blank">View Project</a>
+          </div>
         </div>
 
         <div class="project-card">
           <img class="project-image" alt="Project cover" src="img/material-alch3mist.png" />
           <h3>material-alch3mist</h3>
           <p>An end-to-end text-to-mesh FLUX.1 Kontext [Dev]-based diffusion model specialized on texture generation.</p>
-          <a href="https://github.com/juancc-00/material-alch3mist" target="_blank">View Project</a>
+          <div class="project-actions">
+            <a class="btn btn-outline" href="https://github.com/juancc-00/material-alch3mist" target="_blank">View Project</a>
+          </div>
         </div>
 
         <div class="project-card">
           <img class="project-image" alt="Project cover" src="img/mus.png" />
           <h3>Mus bot</h3>
           <p>A game of the Spanish card game Mus against the machine</p>
-          <a href="https://yosoymus.onrender.com/" target="_blank">View Project</a>
+          <div class="project-actions">
+            <a class="btn btn-outline" href="https://yosoymus.onrender.com/" target="_blank">View Project</a>
+          </div>
         </div>
 
         <div class="project-card">
           <img class="project-image" alt="Project cover" src="img/vocabulary.png"/>
           <h3>vocabulary cardgame</h3>
           <p>An end-to-end text-to-mesh FLUX.1 Kontext [Dev]-based diffusion model specialized on texture generation.</p>
-          <a href="https://github.com/juancc-00/material-alch3mist" target="_blank">View Project</a>
+           <div class="project-actions">
+             <a class="btn btn-outline" href="https://github.com/juancc-00/material-alch3mist" target="_blank">View Project</a>
+           </div>
         </div>
 
       </div>
@@ -104,9 +118,7 @@
       <p>
         You can reach me at: <a href="mailto:juan.canada.carril@gmail.com">juan.canada.carril@gmail.com</a>
       </p>
-      <div>
-        <a class="btn btn-primary" href="cv/CV_JC.pdf" download>Download CV</a>
-      </div>
+
       <div class="socials">
         <a href="https://github.com/juancc-00" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/juan-cc" target="_blank">LinkedIn</a>

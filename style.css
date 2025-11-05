@@ -1,3 +1,7 @@
+html {
+  font-size: 18px; /* zoom suave para toda la página */
+}
+
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
   margin: 0;
@@ -23,6 +27,17 @@ header .container {
   width: 90%;
   max-width: 1000px;
   margin: auto;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
 }
 
 .name {
@@ -122,9 +137,16 @@ h2 {
 .project-card {
   background-color: #fff;
   border-radius: 10px;
-  padding: 0 0 1rem 0;
+  padding: 0 0 3.25rem 0; /* espacio para acciones abajo */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  position: relative;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 .project-image {
@@ -149,6 +171,12 @@ h2 {
 
 .project-card a:hover {
   text-decoration: underline;
+}
+
+.project-actions {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
 }
 
 /* Contact */
@@ -184,8 +212,24 @@ footer {
   background-color: #0a53be;
 }
 
+.btn-outline {
+  color: #0b5ed7;
+  border: 1.5px solid #0b5ed7;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #0b5ed7;
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Responsive tweaks */
 @media (max-width: 640px) {
+  html {
+    font-size: 16px; /* reducir el zoom en móviles para caber mejor */
+  }
+
   .about-layout {
     flex-direction: column;
     align-items: flex-start;
@@ -193,5 +237,27 @@ footer {
 
   .about-left {
     flex: none;
+  }
+
+  .nav-toggle-label {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 5%;
+    left: 5%;
+    flex-direction: column;
+    background: #222;
+    padding: 0.75rem;
+    border-radius: 10px;
+    gap: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .nav-toggle:checked ~ nav ul {
+    display: flex;
   }
 }
